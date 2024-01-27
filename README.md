@@ -82,7 +82,11 @@ Team Mates:
         Disk: 30 GB
         vCPU: 2
     ```
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Fill answer here__.
+3. Why must we commit and sync our current work on source control? ***(1 mark)*** 
+
+    ```markdown
+    To ensure that the changes in our work will be synced and accessible to other team members.
+    ```
 
 ## Exploring the Terminal
 
@@ -376,17 +380,42 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
     @maryamumairah ➜ /workspaces/OSProject (main) $ uname -a
     Linux codespaces-dd6874 6.2.0-1018-azure #18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
     ```
-11. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
+11. What is the available free memory in the system. ***(1 mark)*** 
+
+    ```markdown
+    175 MiB
+    ```
+12. What is the available disk space mounted on /workspace. ***(1 mark)*** 
+
+    ```markdown
+    17 GB
+    ```
+
 13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** 
 
     ```bash
     Linux codespaces-dd6874 6.2.0-1018-azure #18~22.04.1-Ubuntu SMP Tue Nov 21 19:25:02 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
     ```
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
+
+    ```markdown
+    ls displays only the current directory. ls -asl displays detailed contents of the current directory.
+    ```
+15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
+
+    ```markdown
+    2560 4K pages.
+    ```
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
+
+    ```markdown
+    2712.570 MHz
+    ```
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
+
+    ```markdown
+    Node.js process with 1.7% of CPU cycles and PID 615.
+    ```
 
 ## Running your own container instance.
 
