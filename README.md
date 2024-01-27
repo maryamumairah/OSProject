@@ -5,8 +5,8 @@ Group Name: Sapphire
 Section: 1 
 
 Team Mates:
-1. Maryam Umairah Binti Arman Yatim 2110256
-2. Fariha Hadaina Binti Mohd Shazali 2114478
+1. Maryam Umairah Binti Arman Yatim [2110256]
+2. Fariha Hadaina Binti Mohd Shazali [2114478]
 
 ## Rules
 1. You are allowed to have **3 group** members. *Exception* is allowed **IFF (if and only if)** you are allowed to have 4 group members if you are a **multinational** or a **multigender** group. 
@@ -23,8 +23,12 @@ Team Mates:
 
 ***Questions:***
 
-1. What is the link of the fork OSProject in your repository. ***(1 mark)*** https://github.com/maryamumairah/OSProject
-2. How many files and folders are in this repository. ***(1 mark)*** 1 README.md file, 1 images folder
+1. What is the link of the fork OSProject in your repository. ***(1 mark)*** 
+
+    https://github.com/maryamumairah/OSProject
+2. How many files and folders are in this repository. ***(1 mark)*** 
+
+    1 README.md file, 1 images folder
 
 
 ## Exploring github codespaces
@@ -56,17 +60,26 @@ Team Mates:
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** Windows.
-2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
-i) Basic Configuration:
-    RAM: 2 GB
-    Disk: 30 GB
-    vCPU: 1
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** 
 
-ii) Standard Configuration:
-    RAM: 8 GB
-    Disk: 30 GB
-    vCPU: 2
+    Windows.
+2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
+    
+    i) Basic Configuration:
+        
+        RAM: 2 GB
+        
+        Disk: 30 GB
+        
+        vCPU: 1
+
+    ii) Standard Configuration:
+        
+        RAM: 8 GB
+        
+        Disk: 30 GB
+        
+        vCPU: 2
 3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Fill answer here__.
 
 ## Exploring the Terminal
