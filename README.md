@@ -508,13 +508,43 @@ At the terminal, create a new directory called **myroot**, and run a instance of
     The files created in docker container on the host virtual machine is owned by the root user and group
     ```
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
-```bash
-//use sudo and chown
-sudo chown -R codespace:codespace myroot
-```
 
-    Yes, you can.
-    
+    ```bash
+    //use sudo and chown
+    sudo chown -R codespace:codespace myroot
+    ```
+
+    First, I added a new user named codespace using sudo.
+
+    ```bash
+    root@95bd6dab67d6:~# sudo adduser codespace
+    Adding user `codespace' ...
+    Adding new group `codespace' (1000) ...
+    Adding new user `codespace' (1000) with group `codespace (1000)' ...
+    Creating home directory `/home/codespace' ...
+    Copying files from `/etc/skel' ...
+    New password: 
+    Retype new password: 
+    passwd: password updated successfully
+    Changing the user information for codespace
+    Enter the new value, or press ENTER for the default
+            Full Name []: 
+            Room Number []: 
+            Work Phone []: 
+            Home Phone []: 
+            Other []: 
+    Is the information correct? [Y/n] y
+    Adding new user `codespace' to supplemental / extra groups `users' ...
+    Adding user `codespace' to group `users' ...
+    ```
+
+    Then, I changed the permission of the files using sudo chown to user codespace.
+    ```bash
+    root@95bd6dab67d6:~# sudo chown -R codespace:codespace /root
+    root@95bd6dab67d6:~# ls -l
+    total 4
+    -rw-rw-rw- 1 codespace codespace 18 Jan 28 03:06 helloworld.txt
+    ```
 
 ## You are on your own, create your own static webpage
 
