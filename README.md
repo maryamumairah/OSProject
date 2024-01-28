@@ -550,6 +550,8 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 1. Create a directory called webpage in your host machine
 2. Inside the directory, create a page index.html, with any content you would like
+<img src="./images/StaticWebpage.png" width="70%">
+
 3. Then, run the apache webserver and mount the webpage directory to it. Hint:
 ```bash
 ## the -p 8080:80 flag points the host port 8080 to the container port 80
@@ -570,9 +572,33 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** 
+    ```bash
+    root@5c49a7c67a7b:/usr/local/apache2/htdocs# ls -l
+    total 4
+    -rw-rw-rw- 1 1000 1000 360 Jan 28 13:23 index.html
+    ```
+    
+    ```markdown
+    - Permission: -rw-rw-rw- which includes read and write permission
+    - User: User ID of 1000
+    - Group: Group ID of 1000
+    ```
+
 2. What port is the apache web server running. ***(1 mark)***
+    ```markdown
+    Port 8080
+    ```
 3. What port is open for http protocol on the host machine? ***(1 mark)***
+    ```bash
+    @farihahadaina ➜ /workspaces/OSProject (main) $ sudo netstat -tuln | grep :8080
+    tcp        0      0 0.0.0.0:8080            0.0.0.0:*               LISTEN     
+    tcp6       0      0 :::8080                 :::*                    LISTEN       
+    ```
+    ```markdown
+    Port 8080 is open
+    ```
+
 
 ## What to submit
 
